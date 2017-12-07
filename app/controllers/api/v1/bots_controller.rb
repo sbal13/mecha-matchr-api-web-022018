@@ -4,4 +4,8 @@ class Api::V1::BotsController < ApplicationController
 		@bots = Bot.all
 		render json: @bots
 	end
+
+	def reset
+		Resetter.reset
+	end
 end
