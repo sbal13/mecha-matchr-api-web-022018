@@ -65,7 +65,7 @@ class Resetter
 				armor: info[:stats][:armor],
 				bot_class: info[:bot_class],
 				catchphrase: self.generate_phrase,
-				avatar_url: Faker::Avatar.image("robo-warrior")
+				avatar_url: Faker::Avatar.image
 				})
 		end
 	end
